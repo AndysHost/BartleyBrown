@@ -1,0 +1,228 @@
+p { letter-spacing: 1.5pt; margin:2% auto; color:#EEBE00; padding: 0; font-size:32pt; font-weight: normal; line-height: 31pt; }
+a { color: #B0ADAD; text-decoration: none; font-weight: normal; font-size:15pt;}
+
+ul { text-align: center; margin: 2% 0; padding: 0;}
+li { list-style: none; display: inline; margin: 0 3%; padding: 0; }
+li a{ color: #525252; font-style:normal; letter-spacing: 1pt; font-size: 12pt; font-weight: normal; text-transform: lowercase; }
+li:first-child { margin: 0 1% 0 0; }
+li:last-child { margin: 0 0 0 1%; }
+
+svg { margin:2% auto 0 auto; fill:#fff; width:30%; }
+
+/* .element { transition: [property] [duration] [ease] [delay] } */
+	
+#element { 
+    margin:0 auto 5% auto;
+    animation-name: element;
+    animation-delay: 0.5s;
+    animation-duration: 2s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+@keyframes element {
+    0% { opacity:0; }
+    50% { opacity:0;}
+    100% { opacity:1; visibility: visible;}
+}
+
+#Crest{animation: Crest 1s ease-in-out 0s 1;}
+@keyframes Crest {
+    0% { opacity:0; transform: translateY(-200px)}
+    100% { opacity:1; transform: translateY(0px)}
+}
+
+#CrestText{animation: CrestText 1.3s ease-in-out 0.2s 1 forwards; visibility: hidden;}
+@keyframes CrestText {
+    0% { opacity:0; transform: translateY(100px);  }
+    100% { opacity:100; transform: translateY(0px); visibility: visible;}
+}
+
+
+
+.register { padding:0;  display: inline-block;}
+.register p{ color: #fff; text-transform: uppercase; letter-spacing:2pt; margin:0 auto 3% auto; padding: 0; font-size:15pt;}
+
+.button {
+    border: solid #e6e6e6 1px;
+    padding:2% 4%;
+    color: #e6e6e6;
+    text-transform: uppercase;
+    letter-spacing:2pt;
+    margin:0 auto 3% auto;
+    font-size:15pt;
+    display: inline-block;
+}
+.button:hover {
+    border: solid #EEBE00 1px;
+    color: #EEBE00;
+}
+
+#form {display: none; transition: all 0.15s ease-out 0s;}
+
+.form p {
+    font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
+    font-style: italic;
+    font-size: 10px;
+    color: #999;
+}
+input {background: none; border: solid 2px #eebe00; color: #eebe00; padding: 15px 40px; font-size:18px; display: inline-block;}
+input:focus, input:active {outline:none;}
+
+input[type="text"], input[type="email"] {
+  border: none;
+    border-bottom: solid 2px #eebe00;
+}
+
+input[type="submit"]:active {
+  color: white;
+  background: #eebe00;
+}
+
+.input-group {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+}
+.input-group input {
+  padding: 15px 0px;
+}
+.input-group label {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  font-style: italic;
+  font-size: 16px;
+  color: #999;
+  pointer-events: none;
+  -webkit-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+}
+.input-group input:focus + label,
+.input-group input.has-value + label {
+  top: -10px;
+  font-size: 12px;
+  color: #aaa;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 1710px) {
+    body{background-color: #f00;}
+}
+
+@media all and (max-width: 1100px) {
+    body{}
+    .register p{width:66%; line-height: 20pt;}
+}
+
+
+
+
+@media all and (max-width: 800px) { 
+
+    svg { margin:7% auto 0 auto; width:90%; } 
+    li:first-child,  li:last-child { margin: 0; } 
+    
+    p { letter-spacing: 2pt; margin:6% auto; color:#EEBE00; padding: 0; font-size:24pt; line-height: 24pt;}
+    a { color: #B0ADAD; text-decoration: none; font-weight: normal; font-size:15pt;}
+
+    .register { padding:4% 3%;margin-bottom:2%; background-color: #1d1d1d; display: inline-block;}
+    .register p{ color: #fff; text-transform: uppercase; letter-spacing:2pt; margin:0 auto 5% auto; padding: 0; font-size:18pt; line-height: normal;}
+
+    .button {border: solid #EEBE00 2px; padding:3% 4%; margin:auto; color: #EEBE00; text-transform: uppercase; letter-spacing:2pt; margin:0 auto 3% auto; font-size:15pt; display: inline-block; }
+    .button:hover{border: solid #e6e6e6 2px; color: #e6e6e6;}
+}
+
+
+@media all and (max-width: 500px) { 
+
+    svg { margin:7% auto 0 auto; width:90%; } 
+    li:first-child,  li:last-child { margin: 0; } 
+    
+    p { letter-spacing: 1pt; margin:8% auto; color:#EEBE00; padding: 0; font-size:20pt; line-height: 22pt;}
+    a { color: #B0ADAD; text-decoration: none; font-weight: normal; font-size:15pt;}
+
+    .register { padding:4% 8%;margin-bottom:2%; background-color: #1d1d1d; display: inline-block;}
+    .register p{ color: #fff; text-transform: uppercase; letter-spacing:2pt; margin:0 auto 5% auto; padding: 0; font-size:13pt; line-height: normal; width: 90%;}
+
+    .button {border: solid #EEBE00 2px; padding:3% 4%; margin:auto; color: #EEBE00; text-transform: uppercase; letter-spacing:2pt; margin:0 auto 3% auto; font-size:15pt; display: inline-block; }
+    .button:hover{border: solid #e6e6e6 2px; color: #e6e6e6;}
+    
+
+    
+    input {background: none; border: solid 2px #eebe00; color: #eebe00; padding: 10px 30px; font-size:18px;}
+    input:focus, input:active {outline:none;}
+
+    input[type="text"], input[type="email"] {
+        border: none;
+        border-bottom: solid 2px #eebe00;
+    }
+
+    input[type="submit"]:active {
+      color: white;
+      background: #eebe00;
+    }
+
+    .input-group {
+      display: block;
+      margin: 2%;
+        
+    }
+    .input-group input {
+      padding: 2% 0;
+      width: 90%;
+      margin: 4% 0;
+    }
+    .input-group label {
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      -webkit-transform: translateY(-30%);
+      transform: translateY(-30%);
+      font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
+      font-style: italic;
+      font-size: 16px;
+      color: #999;
+      pointer-events: none;
+      -webkit-transition: all 0.15s ease-out 0s;
+      transition: all 0.15s ease-out 0s;
+    }
+    .input-group input:focus + label,
+    .input-group input.has-value + label {
+      top: -5px;
+      font-size: 12px;
+      color: #aaa;
+    }
+
+    
+}
